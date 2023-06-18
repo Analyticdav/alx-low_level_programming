@@ -5,14 +5,14 @@
  */
 int main(void)
 {
-	int k = '0';
-	int l = '0';
+	int k = '1';
+	int l = '1';
 
 	while (k <= '9')
 	{
 		while (l <= '9')
 		{
-			if (!(k > l) || 1 == l)
+			if (!(k > l) || k == l)
 			{
 				putchar(k);
 				putchar(l);

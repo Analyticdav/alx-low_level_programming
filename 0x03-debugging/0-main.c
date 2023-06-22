@@ -1,15 +1,13 @@
 #include "main.h"
-
 /**
- * main - Defines the function
- * Return: 0 (success)
+ * main - The function
+ * Return 0 (Succes)
  */
-
 int main(void)
 {
 int i;
 
 i = 0;
-positive_negative(i);
+positive_or_negative(i);
 return (0);
 }

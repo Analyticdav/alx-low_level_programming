@@ -3,7 +3,7 @@
 /**
  * print_last_digit -Prints last digits of numbers
  * @n: The digit to print
- * Return: The last_digit of nunber
+ * Return: The last_digit 0 of nunber
  */
 
 print_last_digit(int n)

@@ -1,23 +1,22 @@
 #include "main.h"
 /**
- * rev_strin - Function that reverses steings
+ * rev_string - Function that reverses steings
  * @s: The string
- * Return: string
+ * Return: 0
  */
 void rev_string(char *s)
 {
-char rev = [0];
-int counter = 0;
-int i;
-
-while (s[counter] != '\0')
-counter++;
-for (i = 0; i < counter; i++)
+int length, z, half;
+char temp;
+for (length = 0; s[length] != '\0'; length++)
+;
+z = 0;
+half = length / 2;
+while (half--)
 {
-counter--;
-rev = s[i];
-s[i] = s[counter];
-s[counter] = rev;
+temp = s[length - z - 1];
+s[length - z - 1] = s[z];
+s[z] = temp;
+z++;
 }
 }
-

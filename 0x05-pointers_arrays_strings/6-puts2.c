@@ -6,23 +6,14 @@
  */
 void puts2(char *str)
 {
-int l = 0;
-int t = 0;
-int o;
-char *y = str;
-
-while (*y != '\n')
+int p = 0;
+while (str[p] != '\0')
 {
-y++;
-l++;
+if (p % 2 == 0)
+{
+_putchar(str[p]);
 }
-t = l - 1;
-for (o = 0; o <= t; o++)
-{
-if (o % 2 == 0)
-{
-_putchar(str[0]);
-}
+p++;
 }
 _putchar('\n');
 }

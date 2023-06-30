@@ -1,23 +1,26 @@
 #include "main.h"
-/**
- * _strcat - The function
- * @dest: The output
- * @src: The input
- * Return: point to dest
+/*
+ * _strcat - The function to concatenate
+ * @src: the input
+ * @dest: the output
+ * Return: void
  */
 char *_strcat(char *dest, char *src)
 {
-int y, z;
+int x, y;
 
-y = 0;
-while (dest[y] != '\0')
+x = 0;
+while (dest[x] != '\0')
 {
+x++;
+}
+y = 0;
+while (src[y] != '\0')
+{
+dest[x] = src[y];
+x++;
 y++;
 }
-for (z = 0; src[z] != '\0'; z++, y++)
-{
-dest[y] = src[z];
-}
-dest[y] = '\0';
+dest[x] = '\0';
 return (dest);
 }

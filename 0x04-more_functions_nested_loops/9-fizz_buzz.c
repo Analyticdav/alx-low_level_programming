@@ -22,6 +22,10 @@ else if (p % 3 == 0 && p % 5 == 0)
 {
 printf("FizzBuzz");
 }
+else if (p == 1)
+{
+printf("%d", p);
+}
 }
 printf("\n");
 return (0);

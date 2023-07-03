@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_memset - The function
+ * _memset - The function
  * @s: the memory
  * @n: the number of counts
  * @b: memory location

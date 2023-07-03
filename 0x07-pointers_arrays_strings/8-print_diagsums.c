@@ -7,7 +7,7 @@
  */
 void print_diagsums(int *a, int size)
 {
-int index, diagonal_sum1, diagonal_sum2;
+int index, diagonal_sum1 = 0, diagonal_sum2= 0;
 
 for (index = 0; index < size; index++)
 {

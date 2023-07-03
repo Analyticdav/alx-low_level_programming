@@ -4,6 +4,7 @@
  * @s: the memory
  * @n: the number of counts
  * @b: memory location
+ * Return: string @s
  */
 char *_memset(char *s, char b, unsigned int n)
 {

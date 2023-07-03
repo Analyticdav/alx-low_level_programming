@@ -24,5 +24,3 @@ return (length);
 }
 s++;
 }
-return (length);
-}

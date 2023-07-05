@@ -5,7 +5,7 @@
  * @root: The root to examine
  * Return: Square root of natural numbers
  */
-int num(int n,int root)
+int num(int n, int root)
 {
 if (n * n == root)
 return (n);

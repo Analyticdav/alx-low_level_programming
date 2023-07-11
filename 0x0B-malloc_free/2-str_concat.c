@@ -1,41 +1,32 @@
-#include <stdlib.h>
 #include <string.h>
+#include "main.h"
 /**
-* str_concat - The function
-* @s1: First string
-* @s2: Second string
-* Return: Null byte
-*/
-char *str_concat(char *s1, char *s2)
+ * _strdup - Duplicates a string.
+ * @str: The string to duplicate.
+ * Return: Pointer to the newly allocated memory
+ * containing the duplicated string.
+ * or NULL if str is NULL or if memory allocation fails.
+ */
+char *_strdup(char *str)
 {
-	char *s;
-	int size1, size2, d, a;
+	char *dupli;
+	int length = 0, i;
 
-	if (s1 == NULL)
-	s1 = "";
+	if (str == NULL)
+		return (NULL);
 
-	if (s2 == NULL)
-	s2 = "";
+	/* Calculate the length of the string */
+	while (str[length] != '\0')
+		length++;
 
-	size1 = strlen(s1) + 1;
-	size2 = strlen(s2) + 1;
-	s = malloc(sizeof(char) * (size1 + size2 - 1));
+	/* Allocate memory for the duplicate string */
+	dupli = malloc((length + 1) * sizeof(char));
+	if (dupli == NULL)
+		return (NULL);
 
-	if (s == NULL)
-	return (NULL);
+	/* Copy the string to the duplicate */
+	for (i = 0; i <= length; i++)
+		dupli[i] = str[i];
 
-	d = a = 0;
-	while (s1[d] != '\0')
-	{
-	s[d] = s1[d];
-	d++;
-	}
-	while (s2[a] != '\0')
-	{
-	s[d] = s2[a];
-	d++, a++;
-	}
-	s[d] = '\0';
-
-	return (s);
+	return (dupli);
 }

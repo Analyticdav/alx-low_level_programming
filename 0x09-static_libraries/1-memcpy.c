@@ -3,6 +3,7 @@
  * _memcpy - The function
  * @dest: destination
  * @src: The source
+ * @n: The counter
  * Return: result to dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)

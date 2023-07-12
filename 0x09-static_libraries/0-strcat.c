@@ -3,12 +3,10 @@
  * _strcat - Concatenates two strings.
  * @dest: Pointer to the destination string.
  * @src: Pointer to the source string.
- *
  * Description: This function apends a string
- * overwriting the terminating null byte (\0) 
- * adds a terminating null byte. 
+ * overwriting the terminating null byte (\0)
+ * adds a terminating null byte.
  * has enough space to accommodate the concatenated string.
- *
  * Return: Pointer to the resulting string dest.
  */
 char *_strcat(char *dest, char *src)
@@ -22,6 +20,5 @@ char *_strcat(char *dest, char *src)
 		dest[i + j] = src[j];
 
 	dest[i + j] = '\0';
-
-	return dest;
+	return (dest);
 }

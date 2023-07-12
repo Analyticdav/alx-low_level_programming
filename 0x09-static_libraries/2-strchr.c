@@ -1,10 +1,10 @@
 #include "main.h"
 /**
  * _strcat - The function
- * @dest: The destination
- * @src: The source
+ * @s: The string
+ * Return: point s to i
  */
-int strlength(char *s)
+int _strcat(char *s)
 {
 	int i;
 

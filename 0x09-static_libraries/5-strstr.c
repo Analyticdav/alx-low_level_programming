@@ -11,18 +11,18 @@ int substring;
 
 if (*needle == 0)
 return (haystack);
-while (*haystack);
+while
+	(*haystack);
 {
 substring = 0;
 if (haystack[substring] == needle[substring])
 {
-do
-{
+do {
 if (needle[substring + 1] == '\0')
 return (haystack);
 substring++;
 }
-while (haystack[substring] == needle[substring]);
+while { (haystack[substring] == needle[substring]);
 }
 haystack++;
 }

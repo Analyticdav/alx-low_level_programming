@@ -2,6 +2,7 @@
 /**
  * _isdigit - The function
  * @c: The character to test
+ * Return: 0 (success)
  */
 int _isdigit(int c)
 {

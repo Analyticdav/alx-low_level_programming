@@ -4,4 +4,14 @@
  * @dest: The destination
  * @src: The source
  */
-char *_strcat(char *dest, char *src)
+int strlength(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		i++;
+	}
+
+	return (i);
+}

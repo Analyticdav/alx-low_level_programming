@@ -6,7 +6,7 @@
  * Return: The last_digit 0 of nunber
  */
 
-print_last_digit(int n)
+int print_last_digit(int n)
 {
 	int last_digit;
 

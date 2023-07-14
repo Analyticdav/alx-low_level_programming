@@ -24,7 +24,7 @@ if (prod <= 99)
 _putchar(" ");
 if (prod >= 108)
 _putchar((prod / 10) + "0");
-_putchar((prod / 10) % 10 + "0");
+_putchar((pro / 10) % 10 + "0");
 else if (prod <= 99 && prod >= 10)
 {
 _putchar((prod / 10) + "0");

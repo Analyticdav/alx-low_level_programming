@@ -1,22 +1,13 @@
 #include <stdio.h>
-#include "lists.h"
-/**
- * intro_message - Prints a premessage
- */
-
-void intro_message(void)
-{
-printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n");
-}
+void intro(void) __attribute__ ((constructor));
 
 /**
- * main - The main function
- * Return: Always 0.
+ * intro - The introductory comment
+ *Return: void
  */
-int main(void)
+
+void intro(void)
 {
-	intro_message();
-
-
-	return (0);
+printf("You're beat! and yet, you must allow,\n");
+printf("I bore my house upon my back!\n");
 }

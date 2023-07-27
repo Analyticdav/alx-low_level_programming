@@ -12,7 +12,7 @@
 size_t print_list(const list_t *h)
 {
 	const list_t *current = h;
-	size_tp count = 0;
+	size_t count = 0;
 
 	printf("[");
 	while (current != NULL)

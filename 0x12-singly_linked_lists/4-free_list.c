@@ -15,5 +15,5 @@ list_t *temporary;
 	head = head->next;
 	free(temporary->str);
 	free(temporary);
-	}	
+}
 }
